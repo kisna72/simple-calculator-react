@@ -1,5 +1,5 @@
 import React from 'react';
-import NumberBtn from './Components/Number';
+import NumberBtn from './Components/NumberBtn';
 import Command from './Components/Command';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -24,6 +24,14 @@ class App extends React.Component {
     let previous_input = null;
     let current_input = null;
     let current_operation = null ;
+
+    // if current operation is already something, we want to replace the operator. 
+    if(this.state.current_operation && this.state.current_operation!=="="){
+      this.setState({
+        current_operation:command
+      })
+      return 
+    }
 
     if(command === "+"){
 
