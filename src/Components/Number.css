@@ -1,0 +1,11 @@
+.number{
+    /* padding: 30px; */
+    border: 1px solid darkgray;
+    background-color: aquamarine;
+    /* width: 90px; */
+    margin: auto;
+}
+
+.number .value {
+    margin:10px 10px 10px 10px
+}
