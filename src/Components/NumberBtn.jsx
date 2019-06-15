@@ -1,9 +1,9 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Number.css';
+import './NumberBtn.css';
 
-class Number extends React.Component{
+class NumberBtn extends React.Component{
     static propTypes = {
         value : propTypes.number.isRequired,
         handleClick:propTypes.func.isRequired
@@ -17,4 +17,4 @@ class Number extends React.Component{
     }
 }
 
-export default Number
+export default NumberBtn

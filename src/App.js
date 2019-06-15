@@ -1,5 +1,5 @@
 import React from 'react';
-import Number from './Components/Number';
+import NumberBtn from './Components/Number';
 import Command from './Components/Command';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -99,16 +99,16 @@ class App extends React.Component {
         <div>
           You entered: {this.state.current_input}
         </div>
-        <Number handleClick={this.handleNumberClick} value={1}/>
-        <Number handleClick={this.handleNumberClick} value={2}/>
-        <Number handleClick={this.handleNumberClick} value={3}/>
-        <Number handleClick={this.handleNumberClick} value={4}/>
-        <Number handleClick={this.handleNumberClick} value={5}/>
-        <Number handleClick={this.handleNumberClick} value={6}/>
-        <Number handleClick={this.handleNumberClick} value={7}/>
-        <Number handleClick={this.handleNumberClick} value={8}/>
-        <Number handleClick={this.handleNumberClick} value={9}/>
-        <Number handleClick={this.handleNumberClick} value={0}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={1}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={2}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={3}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={4}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={5}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={6}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={7}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={8}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={9}/>
+        <NumberBtn handleClick={this.handleNumberClick} value={0}/>
         <Command handleClick={this.handleCommandClick} command="+"/>
         <Command handleClick={this.handleCommandClick} command="-"/>
         <Command handleClick={this.handleCommandClick} command="/"/>
